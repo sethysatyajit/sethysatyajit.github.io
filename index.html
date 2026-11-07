@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/Logo.png" type="image/png">
+  <title>Satyajit Sethy</title>
+  <meta name="description" content="Portfolio of Satyajit Sethy, a cybersecurity professional and full-stack developer using Python, Node.js, MySQL and MongoDB.">
+  <meta name="author" content="Satyajit Sethy">
+  <meta name="theme-color" content="#0a0f1e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar is injected from js/components.js -->
+  <header id="site-header"></header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="pop-in">Hi, I am <span class="name">Satyajit Sethy</span></h1>
+          <p class="role-line pop-in" style="--d:200ms">I am a <span data-typing='["Cybersecurity Professional","Python Problem Solver","Full-Stack Developer","Ethical Hacking Learner"]'></span></p>
+          <p class="hero-text pop-in" style="--d:350ms">I protect digital spaces and build the web apps that live in them. Python is my go-to for tricky problems, and Node.js, MySQL and MongoDB power the apps I ship.</p>
+          <div class="hero-cta pop-in" style="--d:500ms">
+            <a href="projects.html" class="btn btn-primary">View my projects</a>
+            <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <div class="hero-socials pop-in" style="--d:650ms" id="hero-socials"></div>
+        </div>
+        <div class="terminal pop-in" style="--d:400ms" data-tilt aria-label="Animated terminal">
+          <div class="term-bar"><i></i><i></i><i></i><span>satyajit@secure-shell</span></div>
+          <div class="term-body" id="terminal-body"></div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"></div>
+    </section>
+
+    <section id="about-preview">
+      <div class="container about-grid">
+        <div class="avatar reveal" data-anim="left">
+          <span class="initials">SS</span>
+          <img src="img/profile.png" alt="Satyajit Sethy" onerror="this.remove()">
+        </div>
+        <div class="about-text reveal" data-anim="right">
+          <div class="section-head" style="margin-bottom:22px"><h2>Security first, code always</h2></div>
+          <p>I am a <strong>cybersecurity professional</strong> who loves diving into the world of digital security. I enjoy using <strong>Python</strong> to solve tricky problems and keep systems safe.</p>
+          <p>I am also a <strong>full-stack developer</strong> working with Node.js, MySQL and MongoDB. My focus is protecting digital spaces while constantly learning and growing in this field.</p>
+          <a href="about.html" class="btn btn-ghost" style="margin-top:8px">More about me</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container stats">
+        <div class="stat reveal" data-anim="pop"><b data-count-from="projects" data-count="5">0</b><span>Projects built</span></div>
+        <div class="stat reveal" data-anim="pop" style="--d:100ms"><b data-count-from="skills" data-count="14">0</b><span>Skills and tools</span></div>
+        <div class="stat reveal" data-anim="pop" style="--d:200ms"><b data-count-from="groups" data-count="4">0</b><span>Areas of focus</span></div>
+      </div>
+    </section>
+
+    <section id="featured">
+      <div class="container">
+        <div class="section-head reveal"><h2>Featured projects</h2><p>A few things I have built recently. Every one is open on GitHub.</p></div>
+        <div class="project-grid" id="featured-projects"></div>
+        <div style="margin-top:36px;text-align:center" class="reveal"><a href="projects.html" class="btn btn-primary">Browse all projects</a></div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><h2>Tools I work with</h2></div>
+        <div class="marquee reveal" id="skill-marquee"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band reveal" data-anim="pop">
+          <h2>Have a project or a security question?</h2>
+          <p>Send me an email and I will get back to you.</p>
+          <a class="btn btn-primary" id="cta-mail" href="#">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is injected from js/components.js -->
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
